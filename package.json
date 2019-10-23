@@ -1,0 +1,23 @@
+{
+  "name": "eslint-global-patch",
+  "version": "1.0.1",
+  "description": "From ESLint@6 the possibility was removed to use global configs and plugins. This npm package will patch you eslint installation to add support back.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wintercounter/eslint-global-patch.git"
+  },
+  "keywords": [
+    "eslint"
+  ],
+  "author": "wintercounter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wintercounter/eslint-global-patch/issues"
+  },
+  "homepage": "https://github.com/wintercounter/eslint-global-patch#readme"
+}
