@@ -7,7 +7,10 @@ if (fs.existsSync(file)) {
     fs.readFile(file, 'utf8', function (err, data) {
         if (err) return console.log(err)
 
+        if (data.includes('eslint-global-patch-applied')) return
+
         const result = data.replace(/resolve\(moduleName, relativeToPath\) {[\s\S]*?catch/g, `resolve(moduleName, relativeToPath) {
+// eslint-global-patch-applied
 try {
     return createRequire(relativeToPath).resolve(moduleName);
 } catch (error) {} // eslint-disable-line
