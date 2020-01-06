@@ -20,8 +20,6 @@ try {
 } catch`)
         fs.writeFile(file, result, 'utf8', function (err) {
             if (err) return console.log(err)
-
-            console.log('eslint successfully patched for global support')
         })
     })
 }
