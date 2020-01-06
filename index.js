@@ -1,7 +1,7 @@
 const path = require('path')
 const fs = require('fs')
 
-const file = path.resolve('../eslint/lib/shared/relative-module-resolver.js')
+const file = path.resolve(__dirname, '../eslint/lib/shared/relative-module-resolver.js')
 
 if (fs.existsSync(file)) {
     fs.readFile(file, 'utf8', function (err, data) {
