@@ -1,6 +1,6 @@
 # eslint-global-patch
 
-From ESLint@6 the possibility was removed to use global configs and
+From ESLint@6 the possibility got removed to use global configs and
 plugins. This npm package will patch you ESLint installation to add
 support back.
 
@@ -13,7 +13,8 @@ your source file and if it fails, it will try to find them also relative
 to the patched file: `eslint/lib/shared/relative-module-resolver.js`.
 
 This package can stop working with any ESLint update, I'll try to update
-it ASAP.
+it ASAP. For now the versioning strategy is to use the same ESLint version
+number where the braking change introduced.
 
 Usage:
 
