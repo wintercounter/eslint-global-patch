@@ -3,6 +3,7 @@ const fs = require('fs')
 
 const f1 = path.resolve(__dirname, '../eslint/lib/shared/relative-module-resolver.js')
 const f2 = path.resolve(__dirname, '../@eslint/eslintrc/lib/shared/relative-module-resolver.js')
+const f3 = path.resolve(__dirname, '../@eslint/eslintrc/dist/eslintrc.cjs')
 
 function doPatch(file) {
     if (fs.existsSync(file)) {
@@ -29,3 +30,4 @@ try {
 
 doPatch(f1)
 doPatch(f2)
+doPatch(f3)
